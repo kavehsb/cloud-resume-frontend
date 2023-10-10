@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function updateVisitorCount() {
+            let visitorCount = localStorage.getItem("visitorCount") || 0;
+            visitorCount = parseInt(visitorCount) + 1;
+            localStorage.setItem("visitorCount", visitorCount);
+            document.getElementById("visitorCount").textContent = visitorCount;
+        }
+
+        window.addEventListener("load", updateVisitorCount);
+    </script>
     <title>Your Name - Resume</title>
     <style>
         body {
@@ -118,6 +128,7 @@
                 <li>Web Development Frameworks (e.g., React, Angular)</li>
             </ul>
         </div>
+        <p>Number of Visitors: <span id="visitorCount">0</span></p>
     </div>
 </body>
 </html>
