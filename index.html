@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script>
         function updateVisitorCount() {
             let visitorCount = localStorage.getItem("visitorCount") || 0;
@@ -13,7 +14,9 @@
 
         window.addEventListener("load", updateVisitorCount);
     </script>
-    <title>Your Name - Resume</title>
+
+    <title>Kaveh Buenaventura - Resume</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,59 +77,78 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1>Your Name</h1>
-            <p>Web Developer</p>
+            <h1>Kaveh Buenaventura</h1>
+            <p>
+                425-877-0127 ● 
+                kavehsbuen@gmail.com ●
+                <a href="https://www.linkedin.com/in/kavehsb">LinkedIn</a> ●
+                <a href="https://www.github.com/kavehsb">GitHub</a>
+            </p>
         </header>
 
+        <hr>
+
         <div class="section">
-            <h2>Contact Information</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+            <h2><u>Technical Skills</u></h2>
+            <p><b>Intermediate:</b> Javascript, Python, Git, npm</p>
+            <p><b>Familiar:</b> HTML, CSS, React, Node.js, Express, MongoDB, AWS</p>
         </div>
 
         <div class="section">
-            <h2>Summary</h2>
-            <p>A passionate and experienced web developer with a strong background in HTML, CSS, and JavaScript. Excited about creating responsive and user-friendly websites.</p>
+            <h2><u>Education</u></h2>
+            <p>
+                <strong>Bachelor of Science in Computer Science and Software Engineering</strong><br>
+                University of Washington, Bothell<br>
+                <b>Graduated:</b> December 2022 (3.33 GPA)<br>
+                <b>Relevant Coursework</b> Computer Programming I & II, Data Structures and Algorithms I & II,
+                Software Engineering, Technical Writing, Management Principles, Analysis and Design, Scripting
+                Languages, Database Systems, Hardware, Introduction to AI, Operating Systems,
+                Human-Computer Interaction
+            </p>
         </div>
 
         <div class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Computer Science</strong><br>
-            University Name<br>
-            Graduation Date: May 20XX</p>
+            <h2><u>Experience</u></h2>
+            <p>
+                <strong>Platform Engineering Intern (fully remote)</strong><br>
+                Slalom Build (June 2022 - August 2022)<br>
+                ● Wrote infrastructure as code with AWS SAM and cloudformation templates to create and
+                configure AWS resources programmatically<br>
+                ● Created development support tools to increase developer efficiency as well as code consistency,
+                readability, and maintainability<br>
+                ● Performed configuration management to adapt the project to the needs of the developers<br>
+                ● Wrote documentation to ensure easy hand-off of work post-internship<br>
+                ● Collaborated with a team of 5 other interns in an Agile environment<br>
+            </p>
         </div>
 
         <div class="section">
-            <h2>Experience</h2>
-            <p><strong>Web Developer</strong><br>
-            Company Name<br>
-            Dates: January 20XX - Present<br>
-            - Developed and maintained company websites using HTML, CSS, and JavaScript.<br>
-            - Collaborated with the design team to ensure visually appealing and user-friendly web applications.<br>
-            - Implemented responsive design principles to optimize user experience on various devices.</p>
+            <h2><u>Software Projects</u></h2>
+            <p>
+                <strong>Country Data Searcher (<a href="https://github.com/kavehsb/fullstack-projects/tree/main/part2/data-for-countries">GitHub Link</a>)</strong><br>
+                <i>Tech Stack: React, Javascript</i><br>
+                ● Created a web application that gathers country data from an API and allows the user to search for
+                a specific country and its respective information<br>
+                ● Generated the html using the React framework<br>
+                ● Leveraged the axios library to retrieve data for the user selected country and weather API to be
+                displayed to the web page
+            </p>
 
-            <p><strong>Intern</strong><br>
-            Another Company<br>
-            Dates: May 20XX - August 20XX<br>
-            - Assisted in front-end web development tasks.<br>
-            - Gained hands-on experience with web technologies and coding practices.</p>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>Version Control (e.g., Git)</li>
-                <li>Web Development Frameworks (e.g., React, Angular)</li>
-            </ul>
+            <p>
+                <strong>Bloglist (<a href="https://github.com/kavehsb/fullstack-projects/tree/main/part4/bloglist/server">GitHub Link</a>)</strong><br>
+                <i>Tech Stack: Javascript, Node.js, Express, MongoDB, Jest</i><br>
+                ● Created the backend for a bloglist web application that performs simple CRUD operations
+                reflected on a Mongo database.<br>
+                ● Interaction with the database is done via RESTful API<br>
+                ● Incorporated integration testing with the Jest testing framework to ensure the correctness of each
+                module of the REST API<br>
+                ● Implemented token authentication with json web token to allow for login and linking users with
+                their corresponding posts
+            </p>
         </div>
         <p>Number of Visitors: <span id="visitorCount">0</span></p>
     </div>
