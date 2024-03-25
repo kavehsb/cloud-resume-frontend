@@ -3,79 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>
-        function updateVisitorCount() {
-            let visitorCount = localStorage.getItem("visitorCount") || 0;
-            visitorCount = parseInt(visitorCount) + 1;
-            localStorage.setItem("visitorCount", visitorCount);
-            document.getElementById("visitorCount").textContent = visitorCount;
-        }
-
-        window.addEventListener("load", updateVisitorCount);
-    </script>
-
     <title>Kaveh Buenaventura - Resume</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            font-size: 18px;
-            color: #666;
-        }
-
-        .section {
-            margin-top: 30px;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0077b6;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <script src="./scripts/visitorcount.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 
 <body>
